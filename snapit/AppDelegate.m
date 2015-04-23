@@ -9,11 +9,26 @@
 #import "AppDelegate.h"
 
 @implementation AppDelegate
-@synthesize theItem, theMenu;
+@synthesize queryResults, window, currentWindowViewController;
+
+int i=0;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
+    
+    //listen for screenshots
+    query = [[NSMetadataQuery alloc] init];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(queryUpdated:) name:NSMetadataQueryDidStartGatheringNotification object:query];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(queryUpdated:) name:NSMetadataQueryDidUpdateNotification object:query];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(queryUpdated:) name:NSMetadataQueryDidFinishGatheringNotification object:query];
+    
+    [query setDelegate:self];
+    [query setPredicate:[NSPredicate predicateWithFormat:@"kMDItemIsScreenCapture = 1"]];
+    [query startQuery];
+
+    
     
     //Initialize Status Item
     myStatusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSSquareStatusItemLength];
@@ -25,19 +40,29 @@
     [myStatusItem setMenu:myStatusMenu];
     
     [myMenuStatusItem setTitle:NSLocalizedString(@"Special Status", @"status menu item text")];
-
+    
+    
+    
 }
 
-- (void)activateStatusMenu
-{
-    NSStatusBar *bar = [NSStatusBar systemStatusBar];
+- (void)applicationWillTerminate:(NSNotification *)notification {
+    [query stopQuery];
+    [query setDelegate:nil];
+    query = nil;
     
-    theItem = [bar statusItemWithLength:NSVariableStatusItemLength];
-    //[theItem retain];
-    
-    [theItem setTitle: NSLocalizedString(@"Tablet",@"")];
-    [theItem setHighlightMode:YES];
-    [theItem setMenu:theMenu];
+    [self setQueryResults:nil];
+}
+
+- (void)queryUpdated:(NSNotification *)note {
+    NSLog(@"%@", [query results]);
+    if(i > 1) {
+        
+        currentWindowViewController = [[NSWindowController alloc] initWithWindowNibName:@"SnapitWindow"];
+        [currentWindowViewController showWindow:self];
+        
+    }
+    i++;
+    [self setQueryResults:[query results]];
 }
 
 @end

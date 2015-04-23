@@ -8,17 +8,16 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate> {
+@interface AppDelegate : NSObject <NSApplicationDelegate,NSMetadataQueryDelegate> {
     
     NSStatusItem *myStatusItem;
     IBOutlet NSMenu *myStatusMenu;
     IBOutlet NSMenuItem *myMenuStatusItem;
+    NSMetadataQuery *query;
     
 }
 
 @property (assign) IBOutlet NSWindow *window;
-
-@property (assign) NSMenu *theMenu;
-@property (retain) NSStatusItem *theItem;
-
+@property (retain) NSWindowController *currentWindowViewController;
+@property (nonatomic, copy) NSArray *queryResults;
 @end
