@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D05430F81AE891C90043FD72 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D05430F71AE891C90043FD72 /* Cocoa.framework */; };
+		D05431021AE891CA0043FD72 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D05431001AE891CA0043FD72 /* InfoPlist.strings */; };
+		D05431041AE891CA0043FD72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D05431031AE891CA0043FD72 /* main.m */; };
+		D05431081AE891CA0043FD72 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D05431061AE891CA0043FD72 /* Credits.rtf */; };
+		D054310B1AE891CA0043FD72 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D054310A1AE891CA0043FD72 /* AppDelegate.m */; };
+		D054310E1AE891CA0043FD72 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D054310C1AE891CA0043FD72 /* MainMenu.xib */; };
+		D05431101AE891CA0043FD72 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D054310F1AE891CA0043FD72 /* Images.xcassets */; };
+		D05431171AE891CA0043FD72 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D05431161AE891CA0043FD72 /* XCTest.framework */; };
+		D05431181AE891CA0043FD72 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D05430F71AE891C90043FD72 /* Cocoa.framework */; };
+		D05431201AE891CA0043FD72 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D054311E1AE891CA0043FD72 /* InfoPlist.strings */; };
+		D05431221AE891CA0043FD72 /* snapitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D05431211AE891CA0043FD72 /* snapitTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D05431191AE891CA0043FD72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D05430EC1AE891C90043FD72 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D05430F31AE891C90043FD72;
+			remoteInfo = snapit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D05430F41AE891C90043FD72 /* snapit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = snapit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D05430F71AE891C90043FD72 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D05430FA1AE891CA0043FD72 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D05430FB1AE891CA0043FD72 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D05430FC1AE891CA0043FD72 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D05430FF1AE891CA0043FD72 /* snapit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "snapit-Info.plist"; sourceTree = "<group>"; };
+		D05431011AE891CA0043FD72 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D05431031AE891CA0043FD72 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D05431051AE891CA0043FD72 /* snapit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "snapit-Prefix.pch"; sourceTree = "<group>"; };
+		D05431071AE891CA0043FD72 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		D05431091AE891CA0043FD72 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D054310A1AE891CA0043FD72 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D054310D1AE891CA0043FD72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D054310F1AE891CA0043FD72 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D05431151AE891CA0043FD72 /* snapitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = snapitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D05431161AE891CA0043FD72 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D054311D1AE891CA0043FD72 /* snapitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "snapitTests-Info.plist"; sourceTree = "<group>"; };
+		D054311F1AE891CA0043FD72 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D05431211AE891CA0043FD72 /* snapitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = snapitTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D05430F11AE891C90043FD72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D05430F81AE891C90043FD72 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D05431121AE891CA0043FD72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D05431181AE891CA0043FD72 /* Cocoa.framework in Frameworks */,
+				D05431171AE891CA0043FD72 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D05430EB1AE891C90043FD72 = {
+			isa = PBXGroup;
+			children = (
+				D05430FD1AE891CA0043FD72 /* snapit */,
+				D054311B1AE891CA0043FD72 /* snapitTests */,
+				D05430F61AE891C90043FD72 /* Frameworks */,
+				D05430F51AE891C90043FD72 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D05430F51AE891C90043FD72 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D05430F41AE891C90043FD72 /* snapit.app */,
+				D05431151AE891CA0043FD72 /* snapitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D05430F61AE891C90043FD72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D05430F71AE891C90043FD72 /* Cocoa.framework */,
+				D05431161AE891CA0043FD72 /* XCTest.framework */,
+				D05430F91AE891CA0043FD72 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D05430F91AE891CA0043FD72 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D05430FA1AE891CA0043FD72 /* AppKit.framework */,
+				D05430FB1AE891CA0043FD72 /* CoreData.framework */,
+				D05430FC1AE891CA0043FD72 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		D05430FD1AE891CA0043FD72 /* snapit */ = {
+			isa = PBXGroup;
+			children = (
+				D05431091AE891CA0043FD72 /* AppDelegate.h */,
+				D054310A1AE891CA0043FD72 /* AppDelegate.m */,
+				D054310C1AE891CA0043FD72 /* MainMenu.xib */,
+				D054310F1AE891CA0043FD72 /* Images.xcassets */,
+				D05430FE1AE891CA0043FD72 /* Supporting Files */,
+			);
+			path = snapit;
+			sourceTree = "<group>";
+		};
+		D05430FE1AE891CA0043FD72 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D05430FF1AE891CA0043FD72 /* snapit-Info.plist */,
+				D05431001AE891CA0043FD72 /* InfoPlist.strings */,
+				D05431031AE891CA0043FD72 /* main.m */,
+				D05431051AE891CA0043FD72 /* snapit-Prefix.pch */,
+				D05431061AE891CA0043FD72 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D054311B1AE891CA0043FD72 /* snapitTests */ = {
+			isa = PBXGroup;
+			children = (
+				D05431211AE891CA0043FD72 /* snapitTests.m */,
+				D054311C1AE891CA0043FD72 /* Supporting Files */,
+			);
+			path = snapitTests;
+			sourceTree = "<group>";
+		};
+		D054311C1AE891CA0043FD72 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D054311D1AE891CA0043FD72 /* snapitTests-Info.plist */,
+				D054311E1AE891CA0043FD72 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D05430F31AE891C90043FD72 /* snapit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D05431251AE891CA0043FD72 /* Build configuration list for PBXNativeTarget "snapit" */;
+			buildPhases = (
+				D05430F01AE891C90043FD72 /* Sources */,
+				D05430F11AE891C90043FD72 /* Frameworks */,
+				D05430F21AE891C90043FD72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = snapit;
+			productName = snapit;
+			productReference = D05430F41AE891C90043FD72 /* snapit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D05431141AE891CA0043FD72 /* snapitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D05431281AE891CA0043FD72 /* Build configuration list for PBXNativeTarget "snapitTests" */;
+			buildPhases = (
+				D05431111AE891CA0043FD72 /* Sources */,
+				D05431121AE891CA0043FD72 /* Frameworks */,
+				D05431131AE891CA0043FD72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D054311A1AE891CA0043FD72 /* PBXTargetDependency */,
+			);
+			name = snapitTests;
+			productName = snapitTests;
+			productReference = D05431151AE891CA0043FD72 /* snapitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D05430EC1AE891C90043FD72 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Tomazeli.net;
+				TargetAttributes = {
+					D05431141AE891CA0043FD72 = {
+						TestTargetID = D05430F31AE891C90043FD72;
+					};
+				};
+			};
+			buildConfigurationList = D05430EF1AE891C90043FD72 /* Build configuration list for PBXProject "snapit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D05430EB1AE891C90043FD72;
+			productRefGroup = D05430F51AE891C90043FD72 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D05430F31AE891C90043FD72 /* snapit */,
+				D05431141AE891CA0043FD72 /* snapitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D05430F21AE891C90043FD72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D05431021AE891CA0043FD72 /* InfoPlist.strings in Resources */,
+				D05431101AE891CA0043FD72 /* Images.xcassets in Resources */,
+				D05431081AE891CA0043FD72 /* Credits.rtf in Resources */,
+				D054310E1AE891CA0043FD72 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D05431131AE891CA0043FD72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D05431201AE891CA0043FD72 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D05430F01AE891C90043FD72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D054310B1AE891CA0043FD72 /* AppDelegate.m in Sources */,
+				D05431041AE891CA0043FD72 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D05431111AE891CA0043FD72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D05431221AE891CA0043FD72 /* snapitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D054311A1AE891CA0043FD72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D05430F31AE891C90043FD72 /* snapit */;
+			targetProxy = D05431191AE891CA0043FD72 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D05431001AE891CA0043FD72 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D05431011AE891CA0043FD72 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D05431061AE891CA0043FD72 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D05431071AE891CA0043FD72 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		D054310C1AE891CA0043FD72 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D054310D1AE891CA0043FD72 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		D054311E1AE891CA0043FD72 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D054311F1AE891CA0043FD72 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D05431231AE891CA0043FD72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D05431241AE891CA0043FD72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D05431261AE891CA0043FD72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "snapit/snapit-Prefix.pch";
+				INFOPLIST_FILE = "snapit/snapit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D05431271AE891CA0043FD72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "snapit/snapit-Prefix.pch";
+				INFOPLIST_FILE = "snapit/snapit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D05431291AE891CA0043FD72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/snapit.app/Contents/MacOS/snapit";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "snapit/snapit-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "snapitTests/snapitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D054312A1AE891CA0043FD72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/snapit.app/Contents/MacOS/snapit";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "snapit/snapit-Prefix.pch";
+				INFOPLIST_FILE = "snapitTests/snapitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D05430EF1AE891C90043FD72 /* Build configuration list for PBXProject "snapit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D05431231AE891CA0043FD72 /* Debug */,
+				D05431241AE891CA0043FD72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D05431251AE891CA0043FD72 /* Build configuration list for PBXNativeTarget "snapit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D05431261AE891CA0043FD72 /* Debug */,
+				D05431271AE891CA0043FD72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D05431281AE891CA0043FD72 /* Build configuration list for PBXNativeTarget "snapitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D05431291AE891CA0043FD72 /* Debug */,
+				D054312A1AE891CA0043FD72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D05430EC1AE891C90043FD72 /* Project object */;
+}
